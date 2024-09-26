@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #F9FBFD;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    min-width: 90px;
+    max-width: 1000px;
+    box-shadow: 1px 1px 1px rgba(100, 100, 100, 0.527);
+}
+
+#menu-options {
+    padding-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 8px;
+}
+
+button {
+    display: grid;
+    height: 28px;
+    width: 28px; 
+    place-items: center;
+    background-color: #F9FBFD;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 3px;
+    cursor: pointer;
+}
+
+button:hover, .active {
+    background-color: rgb(216, 238, 255);
+}
+
+select {
+    padding: 1px, 20px, 1px, 5px;
+    border: 1px solid rgba(100, 100, 100, 0.527);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options label,
+.options select {
+    font-family: "Poppins", sans-serif;
+}
+
+.adv-option-button {
+    background-color: #F9FBFD;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-wrapper input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    padding: 3px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.input-wrapper label {
+    font-size: 0.6em;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #F9FBFD, 0 0 0 3px rgb(0, 0, 0);
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #F9FBFD, 0 0 0 3px rgb(0, 0, 0);
+}
+
+#text-input {
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 50vh;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(100, 100, 100, 0.527);
+}
